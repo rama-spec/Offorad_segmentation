@@ -1,0 +1,9 @@
+torch>=2.0.0
+torchvision
+albumentations
+opencv-python
+matplotlib
+tqdm
+numpy
+pillow
+huggingface_hub
