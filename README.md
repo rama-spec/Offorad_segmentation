@@ -63,8 +63,7 @@ After 20 epochs, the model achieved:
 
 **Loss and IoU curves** are shown below (plots from `train_stats/`):
 
-![Training curves](train_stats/training_curves.png)
-![IoU curves](train_stats/iou_curves.png)
+Check out the Metrics from My Drive : https://drive.google.com/drive/folders/1lCkmOzgRlpPypQFTQWvrNH-91KBUBVBz?usp=sharing
 
 ### Per‑class IoU (Validation)| 
 | -------------- | ---- |
