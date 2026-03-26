@@ -3,7 +3,7 @@
 ## Overview
 Semantic segmentation solution for Duality AI's Offroad Autonomy Segmentation Challenge. Uses a **DINOv2-Small (ViT-S/14)** backbone with a lightweight ConvNeXt‑style decoder, trained on synthetic desert terrain imagery. The model was trained on the provided dataset and evaluated on unseen test images.
 
-**Best Validation IoU:** 0.4928  
+**Best Validation IoU:** 0.80
 **Pixel Accuracy:** 0.89  
 **Inference speed:** ~88ms per image (unoptimized, T4 GPU)
 
@@ -58,7 +58,7 @@ After 20 epochs, the model achieved:
 
 | Metric            | Value  |
 |-------------------|--------|
-| Mean IoU          | 0.4928 |
+| Mean IoU          | ~0.80 |
 | Pixel Accuracy    | 0.89   |
 
 **Loss and IoU curves** are shown below (plots from `train_stats/`):
