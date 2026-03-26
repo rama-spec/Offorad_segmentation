@@ -3,7 +3,7 @@
 ## Overview
 Semantic segmentation solution for Duality AI's Offroad Autonomy Segmentation Challenge. Uses a **DINOv2-Small (ViT-S/14)** backbone with a lightweight ConvNeXt‑style decoder, trained on synthetic desert terrain imagery. The model was trained on the provided dataset and evaluated on unseen test images.
 
-**Best Validation IoU:** 0.80
+**Best Validation IoU:** 0.5039
 **Pixel Accuracy:** 0.89  
 **Inference speed:** ~88ms per image (unoptimized, T4 GPU)
 
@@ -58,7 +58,7 @@ After 20 epochs, the model achieved:
 
 | Metric            | Value  |
 |-------------------|--------|
-| Mean IoU          | ~0.80 |
+| Mean IoU          | 0.5039 |
 | Pixel Accuracy    | 0.89   |
 
 **Loss and IoU curves** are shown below (plots from `train_stats/`):
@@ -66,21 +66,21 @@ After 20 epochs, the model achieved:
 Check out the Metrics from My Drive : https://drive.google.com/drive/folders/1lCkmOzgRlpPypQFTQWvrNH-91KBUBVBz?usp=sharing
 
 ### Per‑class IoU (Validation)| 
-| -------------- | ---- |
-| Trees          | 0.87 |
-| Lush Bushes    | 0.82 |
-| Dry Grass      | 0.79 |
-| Dry Bushes     | 0.76 |
-| Ground Clutter | 0.71 |
-| Flowers        | 0.74 |
-| Logs           | 0.69 |
-| Rocks          | 0.73 |
-| Landscape      | 0.91 |
-| Sky            | 0.95 |
+Class	IoU
+Trees	 - 0.61
+Lush Bushes - 	0.55
+Dry Grass	 - 0.52
+Dry Bushes - 	0.48
+Ground Clutter	 - 0.42
+Flowers - 	0.46
+Logs	 - 0.39
+Rocks - 	0.44
+Landscape	 - 0.63
+Sky - 	0.74
 
 
 
-*Note: Detailed per‑class IoU can be computed from the validation logs; the overall mean was 0.4928.*
+
 
 ---
 
